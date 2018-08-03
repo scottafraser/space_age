@@ -1,17 +1,15 @@
-import {Person} from './age';
-import './styles.css';
-import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import img from './splash.png'
+// import {Person} from './age';
+// import './styles.css';
+// import $ from 'jquery';
+// import 'bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-$(document).ready(function() {
-  let imgTag = "<img src='"+ img + "' alt='test'>";
-  $('#img').html(imgTag);
-  $('#button').submit(function(event) {
-    event.preventDefault();
+
+// $(document).ready(function() {
+//   $('#button').submit(function(event) {
+//     event.preventDefault();
 
 
 
-  });
-});
+//   });
+// });

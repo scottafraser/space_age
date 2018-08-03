@@ -14,13 +14,13 @@ A Javascript app to calculate your galactic age and mortality
 | Behavior	| INPUT	| OUTPUT |
 | :----------:| :-----: | :-------:|
 |Take a person’s age in years and convert it into seconds.| Age | Age in seconds|
-|Find exact age in seconds| birthday | get age in seconds based on current time |
-|Return the age of a human in Mercury years. (A Mercury year is .24 Earth years.)| Birthday | Current Age * .24 |
-|Return the age of a human in Venus years. (A Venus year is .62 Earth years.)| Birthday | Current Age * .62 |
-|Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)| click "remove all"| Birthday | Current Age * 1.88 |
-|Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)| Birthday | Current Age * 11.86 |
-|Determine how many years a user has left to live on each planet| The user will input the average life expectancy for their demographic | Birthday | Life expectancy - Age / (.24, .62, 1, 1.88, 11.86) |
-|If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy| Birthday | if life Expectancy < Age, Age - Life expectancy |
+|Find exact age in seconds| birthday | Get age in seconds based on current time |
+|Return the age of a human in Mercury years. (A Mercury year is .24 Earth years.)| Birthday | Current Age / .24 |
+|Return the age of a human in Venus years. (A Venus year is .62 Earth years.)| Birthday | Current Age / .62 |
+|Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)| Birthday | Current Age / 1.88 |
+|Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)| Birthday | Current Age / 11.86 |
+|Determine how many years a user has left to live on each planet| The user will input the average life expectancy for their demographic |  Life expectancy - Age / for each (.24, .62, 1, 1.88, 11.86) |
+|If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy| Birthday | If life expectancy < Age, Age - Life expectancy |
 
 
 ## Setup/Contribution Requirements

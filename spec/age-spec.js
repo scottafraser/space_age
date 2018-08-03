@@ -41,9 +41,5 @@ describe ('Person', function() {
     let result = oldScott.lifeRemaining(80);
     expect(result).toEqual(sample);
   });
-  
-
-
-
 
 });
