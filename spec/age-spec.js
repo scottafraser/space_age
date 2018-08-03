@@ -21,6 +21,12 @@ describe ('Person', function() {
     expect(result).toEqual(sample);
   });
 
+  it ('should find age on other planets', function() {
+    let sample = ["116.67", "45.16", "14.89", "2.36"];
+    let result = scott.getPlanetAges();
+    expect(result).toEqual(sample);
+  });
+
 
 
 
