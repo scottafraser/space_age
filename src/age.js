@@ -1,17 +1,16 @@
 export class Person {
-  constructor(line1, line2, line3) {
-  this.line1 = line1.split(' ')
-  this.line2 = line2.split(' ')
-  this.line3 = line3.split(' ')
+  constructor(age, life) {
+  this.age = age;
+  this.line2 = life;
+  
 }
-  removeSilentE(line){
-    for (var i = 0 ; i < line.length ; i++){
-      if (line[i].endsWith('e')) {
-        line[i] = line[i].slice('e', -1);
-      }
-   }
-   return line
 
+// Years of age,times 365, times 24, times 60, times 60. Then, number of days between your last birthday, and today. 
+// Multiply by 24, 60, and 60. Then the number of hours between your time of birth and now.
+
+  findAgeinSecons(ageYears){
+  
+   return line
 
   }
 }
