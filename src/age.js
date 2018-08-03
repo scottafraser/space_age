@@ -27,4 +27,18 @@ export class Person {
     return planetAges;
   }
 
+  lifeRemaining(expectancy){
+    const exactAge = this.getExactAge();
+    const life = expectancy.getExactAge();
+    let lifeLeft = life - exactAge;
+      if (lifeLeft < 0){
+        let pastDeath = (Math.abs(lifeLeft))/365/24/60/60;
+        return pastDeath;
+      }
+    let planetExpectancy = this.getPlanetAges(lifeLeft);
+   
+    return planetExpectancy;
+  }
+
+
 }
