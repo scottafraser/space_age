@@ -1,25 +1,23 @@
 export class Person {
-  constructor(age, life) {
-  this.birdthday = birthday;
+  constructor(birthday, age) {
+  this.birthday = birthday;
   this.age = age;
-  this.life = life;
+
   
 }
 
-// Years of age,times 365, times 24, times 60, times 60. Then, number of days between your last birthday, and today. 
-// Multiply by 24, 60, and 60. Then the number of hours between your time of birth and now.
+  findYearInSeconds(){
+    let yearInSeconds = Math.floor(this.age * 365 * 24 * 60 * 60);
 
-  getAgeInSeconds(birthdayInput){
-    const birthday = new Date('birthdayInput');
+    return yearInSeconds;
+    }
+
+  getExactAge(){
+    const birthday = new Date(this.birthday);
     const timeNow = new Date();
-    const ageInSeconds = (timeNow - birthday) * 0.001;
+    const exactAge = (timeNow - birthday) * 0.001;
 
-    return ageInSeconds;
+    return exactAge;
   }
 
-  findAgeinSeconds(ageYears){
-  ageYears * 365 * 24 * 60
-   return line
-
-  }
 }

@@ -1,22 +1,25 @@
 import {Person} from '../src/age';
 
-describe ('Haiku', function() {
-  let poem;
-  let sample;
-
-
-  beforeEach(function() {
-    poem = new Haiku("i mean were looking", "down on waynes basement only", "thats not waynes basement");
+describe ('Person', function() {
+  let scott;
  
+  beforeEach(function() {
+    scott = new Person("1989,9,11", 28);
   });
 
-
-  it ('should remove silent e', function() {
-    sample = "i mean wer looking".split(' ')
-    let result = poem.removeSilentE(poem.line1);
+  it ('should find year in seconds', function() {
+    let sample = 883008000;
+    let result = scott.findYearInSeconds();
     expect(result).toEqual(sample);
   });
 
+  it ('should find exact age in seconds', function() {
+    let now = new Date ();
+    let birthday = new Date(scott.birthday);
+    let sample = Math.floor(now - birthday) * 0.001;
+    let result = scott.getExactAge();
+    expect(result).toEqual(sample);
+  });
 
 
 
