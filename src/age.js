@@ -20,7 +20,7 @@ export class Person {
 
   getPlanetAges(exactAge){
     const earthAge = (exactAge)/365/24/60/60;
-    const planetYears = [0.24, 0.62, 1.88, 11.86];
+    const planetYears = [0.24, 0.62, 1, 1.88, 11.86];
     let planetAges = planetYears.map(function(yearValue) {
       return (earthAge / yearValue).toFixed(2);
     });
@@ -28,9 +28,9 @@ export class Person {
   }
 
   lifeRemaining(expectancy){
-    const exactAge = this.getExactAge();
-    const life = expectancy.getExactAge();
-    let lifeLeft = life - exactAge;
+    const age = this.findYearInSeconds();
+    const life = (Math.floor(expectancy * 365 * 24 * 60 * 60));
+    let lifeLeft = life - age;
       if (lifeLeft < 0){
         let pastDeath = (Math.abs(lifeLeft))/365/24/60/60;
         return pastDeath;

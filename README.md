@@ -19,7 +19,7 @@ A Javascript app to calculate your galactic age and mortality
 |Return the age of a human in Venus years. (A Venus year is .62 Earth years.)| Birthday | Current Age * .62 |
 |Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)| click "remove all"| Birthday | Current Age * 1.88 |
 |Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)| Birthday | Current Age * 11.86 |
-|Determine how many years a user has left to live on each planet| The user will input the average life expectancy for their demographic | Birthday | Life expectancy - Age * (.24, .62, 1, 1.88, 11.86) |
+|Determine how many years a user has left to live on each planet| The user will input the average life expectancy for their demographic | Birthday | Life expectancy - Age / (.24, .62, 1, 1.88, 11.86) |
 |If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy| Birthday | if life Expectancy < Age, Age - Life expectancy |
 
 
