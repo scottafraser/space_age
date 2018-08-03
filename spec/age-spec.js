@@ -18,12 +18,13 @@ describe ('Person', function() {
     let birthday = new Date(scott.birthday);
     let sample = Math.floor(now - birthday) * 0.001;
     let result = scott.getExactAge();
-    expect(result).toEqual(sample);
+    expect(Math.trunc(result)).toEqual(Math.trunc(sample));
   });
 
   it ('should find age on other planets', function() {
-    let sample = ["116.67", "45.16", "14.89", "2.36"];
-    let result = scott.getPlanetAges();
+    const exactAge = 911832473.47;
+    let sample = ["120.48", "46.64", "15.38", "2.44"];
+    let result = scott.getPlanetAges(exactAge);
     expect(result).toEqual(sample);
   });
 
