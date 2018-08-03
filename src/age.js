@@ -15,7 +15,7 @@ export class Person {
   getExactAge(){
     const birthday = new Date(this.birthday);
     const timeNow = new Date();
-    const exactAge = (timeNow - birthday) * 0.001;
+    const exactAge = Math.floor(timeNow - birthday) * 0.001;
 
     return exactAge;
   }
